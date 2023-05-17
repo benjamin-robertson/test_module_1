@@ -24,6 +24,8 @@ pipelines:
       steps:
       - type: "DEPLOYMENT"
         name: "Deployment on lab"
+        control_repo: "control-repo-lab"
+        base_feature_branch: "main"
         policy:
           name: "cd4pe_deployments::feature_branch"
         timeout: 3600000
